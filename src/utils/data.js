@@ -1,3 +1,11 @@
+// --- IMPORT HÌNH ẢNH TRỰC TIẾP ---
+import ProjectImg1 from '../assets/images/projects/Autolink-TT.png'
+import ProjectImg2 from '../assets/images/projects/pdatlatmarketing.png'
+import ProjectImg3 from '../assets/images/projects/Chủ-quán-cà-phê.png'
+import ProjectImg4 from '../assets/images/projects/EAS-School.png'
+import ProjectImg5 from '../assets/images/projects/Home-webgiare.png'
+import ProjectImg6 from '../assets/images/projects/ressta.png'
+
 export const SKILLS = [
   {
     title: 'Frontend Development',
@@ -11,7 +19,7 @@ export const SKILLS = [
   },
   {
     title: 'Backend Development',
-    skills: ['Node.js & Express.js', 'PHP', 'Laravel Framework']
+    skills: ['Node.js & Express.js', 'PHP', 'Laravel Framework', 'RESTful APIs']
   },
   {
     title: 'WordPress Expertise',
@@ -24,7 +32,7 @@ export const SKILLS = [
   },
   {
     title: 'Databases',
-    skills: ['MySQL', 'MongoDB']
+    skills: ['MySQL', 'MongoDB', 'Firebase']
   },
   {
     title: 'Tools & Platforms',
@@ -49,7 +57,7 @@ export const SKILLS = [
 export const PROJECTS = [
   {
     title: 'Auto Link Việt Nam',
-    image: '/assets/images/projects/Autolink-TT.png',
+    image: ProjectImg1, // Sử dụng biến đã import
     description:
       'Website cung cấp dịch vụ về xe, được xây dựng hoàn toàn trên nền tảng WordPress, sử dụng Elementor để tùy biến giao diện.',
     tags: ['WordPress', 'Elementor', 'SEO'],
@@ -58,7 +66,7 @@ export const PROJECTS = [
   },
   {
     title: 'Web giới thiệu dịch vụ Marketing',
-    image: '/assets/images/projects/pdatlatmarketing.png',
+    image: ProjectImg2, // Sử dụng biến đã import
     description:
       'Thiết kế giao diện trên Figma và xây dựng trang web giới thiệu dịch vụ marketing bằng WordPress. Web hiện không còn hoạt động.',
     tags: ['WordPress', 'Figma', 'Elementor'],
@@ -67,7 +75,7 @@ export const PROJECTS = [
   },
   {
     title: 'Decor Quán Cafe',
-    image: '/assets/images/projects/Chủ-quán-cà-phê.png',
+    image: ProjectImg3, // Sử dụng biến đã import
     description:
       'Trang web dịch vụ thiết kế và thi công quán cafe, xây dựng bằng WordPress. Tối ưu hóa cho việc hiển thị hình ảnh và thu hút khách hàng.',
     tags: ['WordPress', 'Elementor', 'UI/UX'],
@@ -76,7 +84,7 @@ export const PROJECTS = [
   },
   {
     title: 'Website Trường học',
-    image: '/assets/images/projects/EAS-School.png',
+    image: ProjectImg4, // Sử dụng biến đã import
     description:
       'Website giới thiệu thông tin cho một cơ sở giáo dục, tập trung vào trải nghiệm người dùng cho phụ huynh và học sinh. Xây dựng bằng WordPress.',
     tags: ['WordPress', 'Elementor'],
@@ -85,7 +93,7 @@ export const PROJECTS = [
   },
   {
     title: 'Website Thiết kế web giá rẻ',
-    image: '/assets/images/projects/Home-webgiare.png',
+    image: ProjectImg5, // Sử dụng biến đã import
     description:
       'Trang web dịch vụ chuyên về thiết kế website, giới thiệu các gói dịch vụ và dự án đã thực hiện. Xây dựng bằng WordPress.',
     tags: ['WordPress', 'Elementor', 'Tối ưu tốc độ'],
@@ -94,7 +102,7 @@ export const PROJECTS = [
   },
   {
     title: 'Website Game',
-    image: '/assets/images/projects/ressta.png',
+    image: ProjectImg6, // Sử dụng biến đã import
     description:
       'Trang web giới thiệu và cung cấp thông tin về game. Giao diện được tùy chỉnh để phù hợp với đối tượng game thủ.',
     tags: ['WordPress', 'Custom Theme'],
