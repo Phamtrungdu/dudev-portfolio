@@ -1,10 +1,10 @@
 // --- IMPORT HÌNH ẢNH TRỰC TIẾP ---
 import ProjectImg1 from '../assets/images/projects/Autolink-TT.png'
-import ProjectImg2 from '../assets/images/projects/pdatlatmarketing.png'
+import ProjectImg2 from '../assets/images/projects/datlatmarketing.png'
 import ProjectImg3 from '../assets/images/projects/Chủ-quán-cà-phê.png'
 import ProjectImg4 from '../assets/images/projects/EAS-School.png'
 import ProjectImg5 from '../assets/images/projects/Home-webgiare.png'
-import ProjectImg6 from '../assets/images/projects/ressta.png'
+import ProjectImg6 from '../assets/images/projects/Ressta-Profile.png'
 
 export const SKILLS = [
   {
