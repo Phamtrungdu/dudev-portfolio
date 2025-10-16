@@ -5,10 +5,15 @@ import './ProjectCard.css';
 const ProjectCard = ({ details }) => {
   const isInactive = details.status !== 'Hoạt động';
 
+  // Tạo đường dẫn ảnh chính xác cho cả môi trường local và khi đã deploy
+  // Nó sẽ tự động thêm "/dudev-portfolio/" vào trước đường dẫn ảnh
+  const imageUrl = `${import.meta.env.BASE_URL}${details.image.replace(/^\//, '')}`;
+
   return (
     <div className="project-card">
       <div className="project-image">
-        <img src={details.image} alt={details.title} />
+        {/* Sử dụng biến imageUrl đã được xử lý */}
+        <img src={imageUrl} alt={details.title} />
         <div className={`project-status ${isInactive ? 'inactive' : 'active'}`}>
           <span className="status-dot"></span>
           {details.status}
