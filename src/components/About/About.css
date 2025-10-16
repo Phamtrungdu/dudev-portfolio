@@ -1,0 +1,223 @@
+/* --- Vùng chứa chính cho phần About --- */
+.about-container {
+  padding: 6rem 0;
+  background-color: var(--secondary-color);
+  border-top: 1px solid rgba(255, 255, 255, 0.1); /* Thêm đường ngăn cách tinh tế */
+}
+
+.about-content-wrapper {
+  margin: 0 auto;
+  padding: 0 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* --- Tiêu đề và phụ đề --- */
+.section-title {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--light-slate);
+  position: relative;
+  margin: 10px;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 4px;
+  background-color: var(--primary-color);
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.about-subtitle {
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+  color: var(--slate);
+  font-size: 1.1rem;
+}
+
+/* --- Bố cục 2 cột: Nội dung và Hình ảnh --- */
+.about-content {
+  display: flex;
+  gap: 3rem;
+  width: 100%;
+  align-items: center;
+}
+
+/* --- Cột 1: Chi tiết văn bản --- */
+.about-details {
+  flex: 1.5; /* Cho phần text nhiều không gian hơn */
+}
+
+.about-details h3 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--light-slate);
+  margin-bottom: 1rem;
+}
+
+.about-details p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--slate);
+  margin-bottom: 1rem;
+}
+
+/* --- Cột 2: Hình ảnh --- */
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.about-image img {
+  max-width: 450px;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #feca575e;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.4s ease;
+}
+
+.about-image:hover img {
+  transform: scale(1.05);
+}
+
+/* --- Kiểu dáng cho nút "View CV" --- */
+.about-details .btn-primary {
+  display: inline-block; /* <-- THÊM DÒNG NÀY */
+  margin-top: 1.5rem;
+  padding: 0.8rem 2rem;
+  font-weight: 700;
+  /* ... các thuộc tính còn lại giữ nguyên ... */
+  background: linear-gradient(90deg, #feca57, #686868);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease;
+  overflow: hidden;
+  border-radius: 50px;
+  font-size: 1.1rem;
+}
+
+.about-details .btn-primary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(235, 235, 235, 0.6),
+    transparent
+  );
+  transition: left 0.6s ease;
+  z-index: -1;
+}
+
+.about-details .btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+  background: linear-gradient(90deg, #ff9ff3, #feca57);
+  color: aquamarine;
+}
+
+.about-details .btn-primary:hover::before {
+  left: 100%;
+}
+.education-block {
+  margin-bottom: 20px;
+}
+/* ... các quy tắc CSS hiện có ... */
+
+/* --- HIỆU ỨNG VIỀN XOAY CHO HÌNH ẢNH (PHIÊN BẢN SỬA LỖI) --- */
+
+/* Container chính cho hình ảnh */
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container cho hiệu ứng viền xoay */
+.image-border-container {
+  position: relative;
+  width: 442px;
+  height: 442px;
+  border-radius: 50%;
+  overflow: hidden; /* Đảm bảo không có gì tràn ra ngoài */
+}
+
+/* Lớp nền gradient xoay (nằm dưới cùng) */
+.image-border-container::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 150%; /* Lớn hơn container để xoay */
+  padding-bottom: 150%;
+  background: conic-gradient(
+    from 0deg,
+    var(--primary-color),
+    #4ecdc4,
+    #ff6b6b,
+    var(--primary-color)
+  );
+  animation: rotate-border 4s linear infinite;
+  transform: translate(-50%, -50%);
+  z-index: 1; /* Nằm dưới hình ảnh */
+}
+
+/* Hình ảnh (nằm ở giữa) */
+.image-border-container img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  z-index: 2; /* Nằm trên lớp gradient */
+}
+
+/* Lớp mặt nạ (nằm trên cùng) */
+.image-border-container::after {
+  content: '';
+  position: absolute;
+  top: 4px; /* Khoảng cách từ mép ngoài, tạo ra độ dày viền 4px */
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  background: var(--secondary-color); /* Màu nền của trang */
+  border-radius: 50%;
+  z-index: 3; /* Nằm trên cùng, che đi phần giữa của gradient */
+}
+
+/* Keyframes cho animation xoay */
+@keyframes rotate-border {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+/* --- Responsive cho màn hình nhỏ --- */
+@media (max-width: 992px) {
+  .about-content {
+    flex-direction: column; /* Chuyển thành 1 cột */
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .about-details {
+    text-align: center; /* Căn giữa text khi chỉ có 1 cột */
+  }
+}

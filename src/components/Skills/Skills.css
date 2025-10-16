@@ -1,0 +1,105 @@
+.skills-container {
+  padding: 6rem 0;
+  background-color: #161616; /* Màu nền đen/xám đậm */
+  border-top: 1px solid #2a2a2a;
+}
+
+.skills-container .container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Tiêu đề chung "My Skills" */
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--light-slate);
+
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 4px;
+  background-color: #e53e3e; /* Màu đỏ cho gạch chân */
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+/* Lưới chứa các thẻ danh mục */
+.skills-grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr); /* 3 cột */
+  gap: 2rem;
+  margin-top: 40px;
+}
+
+/* Kiểu dáng cho mỗi thẻ danh mục */
+.skill-category-card {
+  background-color: #1e1e1e; /* Màu nền của thẻ */
+  padding: 2rem;
+  border-radius: 10px;
+  border: 1px solid #2d2d2d;
+  transition: all 0.3s ease;
+}
+
+.skill-category-card:hover {
+  transform: translateY(-5px);
+  border-color: #00ffff;
+}
+
+/* Tiêu đề bên trong thẻ (LANGUAGES, TOOLS, ...) */
+.skill-category-card .category-title {
+  color: #00ffff; /* Màu cyan */
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+}
+
+/* Danh sách kỹ năng */
+.skill-category-card ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.skill-category-card li {
+  color: var(--slate);
+  font-size: 1rem;
+  line-height: 1.8;
+  position: relative;
+  padding-left: 1.2rem;
+}
+
+/* Tạo dấu chấm đầu dòng (bullet point) */
+.skill-category-card li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #e53e3e; /* Màu đỏ cho bullet */
+  font-weight: bold;
+}
+
+/* Responsive cho màn hình nhỏ */
+@media (max-width: 992px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 cột trên tablet */
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr; /* 1 cột trên mobile */
+  }
+}

@@ -1,0 +1,77 @@
+/* filepath: src/components/Preloader/Preloader.css */
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: column; /* Xếp icon và text theo chiều dọc */
+  justify-content: center;
+  align-items: center;
+  gap: 2rem; /* Khoảng cách giữa icon và text */
+  z-index: 9999;
+  transition: opacity 0.5s ease;
+}
+
+/* --- CSS CHO ICON CHUYỂN ĐỘNG --- */
+.preloader-icon {
+  width: 380px; /* Điều chỉnh kích thước của icon/logo */
+  height: 380px;
+  animation: pulse 2.5s infinite ease-in-out; /* Áp dụng animation */
+}
+
+.preloader-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit:  cover;
+   border-radius: 50%;
+
+}
+
+.preloader-text {
+  text-align: center;
+  color: var(--light-slate);
+  animation: fadeInText 1.5s ease-in-out;
+}
+
+.preloader-text p {
+  font-size: 1.5rem;
+  color: var(--slate);
+  margin: 0;
+}
+
+.preloader-text h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--light-slate);
+}
+
+@keyframes fadeInText {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* --- KEYFRAME CHO HIỆU ỨNG "THỞ" --- */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+}
