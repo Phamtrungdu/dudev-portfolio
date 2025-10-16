@@ -21,3 +21,23 @@
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
 }
+/* ... các quy tắc CSS hiện có ... */
+
+/* --- Kiểu dáng cho nút Xem thêm --- */
+.load-more-btn {
+  margin-top: 3rem;
+  padding: 0.8rem 2.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--light-slate);
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.load-more-btn:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}

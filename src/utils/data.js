@@ -108,5 +108,23 @@ export const PROJECTS = [
     tags: ['WordPress', 'Custom Theme'],
     live: 'https://ressta.com/',
     status: 'Bảo trì'
+  },
+  {
+    title: 'Website Thiết kế web giá rẻ',
+    image: ProjectImg5, // Sử dụng biến đã import
+    description:
+      'Trang web dịch vụ chuyên về thiết kế website, giới thiệu các gói dịch vụ và dự án đã thực hiện. Xây dựng bằng WordPress.',
+    tags: ['WordPress', 'Elementor', 'Tối ưu tốc độ'],
+    live: 'https://www.thietkewebgiare.com.vn/',
+    status: 'Hoạt động'
+  },
+  {
+    title: 'Website Game',
+    image: ProjectImg6, // Sử dụng biến đã import
+    description:
+      'Trang web giới thiệu và cung cấp thông tin về game. Giao diện được tùy chỉnh để phù hợp với đối tượng game thủ.',
+    tags: ['WordPress', 'Custom Theme'],
+    live: 'https://ressta.com/',
+    status: 'Bảo trì'
   }
 ]
