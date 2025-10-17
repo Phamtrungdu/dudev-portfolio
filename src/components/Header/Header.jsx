@@ -14,7 +14,7 @@ const Header = () => {
 
   return (
     <header className="header">
-      <nav className="nav-container">
+      <nav className="nav-container container">
         <a href="#home" className="nav-logo">
           DuDev<span>.</span>
         </a>
