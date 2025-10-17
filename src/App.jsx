@@ -7,6 +7,7 @@ import Hero from './components/Hero/Hero';
 import About from './components/About/About';
 import Skills from './components/Skills/Skills';
 import Projects from './components/Projects/Projects'; // Import component mới
+import Contact from './components/Contact/Contact'; // Import component Contact
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -32,7 +33,8 @@ const App = () => {
             <Hero />
             <About />
             <Skills />
-             <Projects /> 
+            <Projects />
+            <Contact />
             {/* Thêm các component khác của bạn ở đây */}
           </main>
         </div>

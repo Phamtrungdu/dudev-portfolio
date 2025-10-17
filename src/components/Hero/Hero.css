@@ -146,7 +146,7 @@
   height: auto;
   border-radius: 1rem;
   object-fit: cover;
-  box-shadow: 0 0 40px rgba(168, 85, 247, 0.2), 0 0 80px rgba(168, 85, 247, 0.1);
+      box-shadow: 0 0 40px #61dafb1c, 0 0 80px #00ffff73;
 }
 
 /* --- HIỆU ỨNG XUẤT HIỆN TUẦN TỰ (ĐÃ THÊM) --- */
