@@ -16,7 +16,7 @@ const Header = () => {
     <header className="header">
       <nav className="nav-container">
         <a href="#home" className="nav-logo">
-          DuyDev<span>.</span>
+          DuDev<span>.</span>
         </a>
 
         <ul className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>

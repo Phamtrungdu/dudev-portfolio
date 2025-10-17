@@ -1,8 +1,8 @@
 /* filepath: src/components/Projects/ProjectCard/ProjectCard.css */
 .project-card {
-  background: #130a21;
+  background: #051c23;
   border-radius: 1rem;
-  border: 1px solid rgba(168, 85, 247, 0.2);
+  border: 1px solid #1d738b;
   overflow: hidden;
   display: flex;
   flex-direction: column;
