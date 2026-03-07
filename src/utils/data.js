@@ -63,148 +63,147 @@ export const SKILLS = [
 
 export const PROJECTS = [
   {
-    title: 'Auto Link Việt Nam',
-    image: ProjectImg1, // Sử dụng biến đã import
+    title: "Auto Link Vietnam",
+    image: ProjectImg1,
     description:
-      'Website cung cấp dịch vụ về xe, được xây dựng hoàn toàn trên nền tảng WordPress, sử dụng Elementor để tùy biến giao diện.',
-    tags: ['WordPress', 'Elementor', 'SEO'],
-    live: 'https://autolinkvietnam.com.vn/',
-    status: 'Hoạt động'
+      "A car service website built on WordPress using Elementor for interface customization and SEO optimization.",
+    tags: ["WordPress", "Elementor", "SEO"],
+    live: "https://autolinkvietnam.com.vn/",
+    status: "Active"
   },
   {
-    title: 'Web giới thiệu dịch vụ Marketing',
-    image: ProjectImg2, // Sử dụng biến đã import
+    title: "Marketing Service Website",
+    image: ProjectImg2,
     description:
-      'Thiết kế giao diện trên Figma và xây dựng trang web giới thiệu dịch vụ marketing bằng WordPress. Web hiện không còn hoạt động.',
-    tags: ['WordPress', 'Figma', 'Elementor'],
-    live: 'https://www.figma.com/design/8xQEOaQ5ZpBpi23LLdbPaD/Untitled?node-id=0-1&p=f&t=phfGgWHECwyJPl22-0',
-    status: 'Xem trên Figma'
+      "Marketing service introduction website designed in Figma and developed using WordPress. The website is currently no longer active.",
+    tags: ["WordPress", "Figma", "Elementor"],
+    live: "https://www.figma.com/design/8xQEOaQ5ZpBpi23LLdbPaD/Untitled?node-id=0-1&p=f&t=phfGgWHECwyJPl22-0",
+    status: "Inactive"
   },
   {
-    title: 'Decor Quán Cafe',
-    image: ProjectImg3, // Sử dụng biến đã import
+    title: "Cafe Decor Website",
+    image: ProjectImg3,
     description:
-      'Trang web dịch vụ thiết kế và thi công quán cafe, xây dựng bằng WordPress. Tối ưu hóa cho việc hiển thị hình ảnh và thu hút khách hàng.',
-    tags: ['WordPress', 'Elementor', 'UI/UX'],
-    live: 'https://chuquancaphe.vn/',
-    status: 'Hoạt động'
+      "A website for cafe design and construction services built with WordPress, optimized for visual presentation and customer engagement.",
+    tags: ["WordPress", "Elementor", "UI/UX"],
+    live: "https://chuquancaphe.vn/",
+    status: "Inactive"
   },
   {
-    title: 'Website Trường học',
-    image: ProjectImg4, // Sử dụng biến đã import
+    title: "School Website",
+    image: ProjectImg4,
     description:
-      'Website giới thiệu thông tin cho một cơ sở giáo dục, tập trung vào trải nghiệm người dùng cho phụ huynh và học sinh. Xây dựng bằng WordPress.',
-    tags: ['WordPress', 'Elementor'],
-    live: 'https://eas.edu.vn/',
-    status: 'Hoạt động'
+      "An educational website providing information for parents and students, built with WordPress and focused on user experience.",
+    tags: ["WordPress", "Elementor"],
+    live: "https://eas.edu.vn/",
+    status: "Active"
   },
   {
-    title: 'Website Thiết kế web giá rẻ',
-    image: ProjectImg5, // Sử dụng biến đã import
+    title: "Affordable Web Design Website",
+    image: ProjectImg5,
     description:
-      'Trang web dịch vụ chuyên về thiết kế website, giới thiệu các gói dịch vụ và dự án đã thực hiện. Xây dựng bằng WordPress.',
-    tags: ['WordPress', 'Elementor', 'Tối ưu tốc độ'],
-    live: 'https://www.thietkewebgiare.com.vn/',
-    status: 'Hoạt động'
+      "A service website showcasing web design packages and completed projects, developed using WordPress.",
+    tags: ["WordPress", "Elementor", "Performance Optimization"],
+    live: "https://www.thietkewebgiare.com.vn/",
+    status: "Active"
   },
   {
-    title: 'Website Game',
-    image: ProjectImg6, // Sử dụng biến đã import
+    title: "Gaming Website",
+    image: ProjectImg6,
     description:
-      'Trang web giới thiệu và cung cấp thông tin về game. Giao diện được tùy chỉnh để phù hợp với đối tượng game thủ.',
-    tags: ['WordPress', 'Custom Theme'],
-    live: 'https://ressta.com/',
-    status: 'Hoạt động'
+      "A gaming information website with a customized interface designed to match the gaming community.",
+    tags: ["WordPress", "Custom Theme"],
+    live: "https://ressta.com/",
+    status: "Active"
   },
   {
-    title: 'Thế giới mẫu CNCC Web Design',
-    image: ProjectImg7, // Sử dụng biến đã import
+    title: "CNC Design Marketplace",
+    image: ProjectImg7,
     description:
-      'Xây dựng website bán các mẫu CNC và có nhiều tài khoản có thể đăng bán, tối ưu hóa thiết kế di động và hiệu năng tải trang.',
-    tags: ['WordPress', 'Elementor', 'Tối ưu tốc độ'],
-    live: 'https://thegioimaucnc.com/',
-    status: 'Hoạt động'
+      "A marketplace website for CNC design templates where multiple users can upload and sell designs. Optimized for mobile and performance.",
+    tags: ["WordPress", "Elementor", "Performance Optimization"],
+    live: "https://thegioimaucnc.com/",
+    status: "Active"
   },
   {
-    title: 'AUTO GROUP Car Rental Website',
-    image: noImage, // Sử dụng biến đã import
+    title: "TCI Auto Group Car Rental",
+    image: noImage,
     description:
-      'Phát triển website thuê xe ô tô, tối ưu giao diện responsive và cải thiện SEO hiển thị.',
-    tags: ['WordPress', 'Flatsome'],
-    live: 'https://tciautogroupcarrental.com/',
-    status: 'Ngưng hoạt động'
-  },
-
-  {
-    title: 'Website Song Quân Ads',
-    image: ProjectImg8, // Sử dụng biến đã import
-    description:
-      'Trang web về tổ chức sự kiện. tối ưu hóa thiết kế di động và hiệu năng tải trang.',
-    tags: ['WordPress', 'Flatsome', 'Tối ưu tốc độ'],
-    live: 'https://songquanads.com/',
-    status: 'Hoạt động'
+      "A car rental website developed with responsive design and improved SEO structure.",
+    tags: ["WordPress", "Flatsome"],
+    live: "https://tciautogroupcarrental.com/",
+    status: "Inactive"
   },
   {
-    title: 'Bao4road Website',
-    image: noImage, // Sử dụng biến đã import
+    title: "Song Quan Ads Website",
+    image: ProjectImg8,
     description:
-      'Phát triển website Dịch vụ  về  xe, tối ưu giao diện responsive và cải thiện SEO hiển thị.',
-    tags: ['WordPress', 'Elementor', 'Tối ưu tốc độ'],
-    live: '',
-    status: 'Ngưng hoạt động'
+      "An event organization website optimized for mobile design and fast page loading.",
+    tags: ["WordPress", "Flatsome", "Performance Optimization"],
+    live: "https://songquanads.com/",
+    status: "Active"
   },
   {
-    title: 'Khánh phong Website',
-    image: noImage, // Sử dụng biến đã import
+    title: "Bao4road Website",
+    image: noImage,
     description:
-      'Phát triển website Dịch vụ  về  xe, tối ưu giao diện responsive và cải thiện SEO hiển thị.',
-    tags: ['WordPress', 'Elementor', 'SEO'],
-    live: '',
-    status: 'Ngưng hoạt động'
+      "A vehicle service website with responsive design and SEO optimization.",
+    tags: ["WordPress", "Elementor", "Performance Optimization"],
+    live: "",
+    status: "Inactive"
   },
   {
-    title: 'Đà lạt marketing Website',
-    image: noImage, // Sử dụng biến đã import
+    title: "Khanh Phong Website",
+    image: noImage,
     description:
-      'Phát triển website Giới thiệu công ty và marketing, tối ưu giao diện responsive và cải thiện SEO hiển thị.',
-    tags: ['WordPress', 'Elementor', 'SEO'],
-    live: '',
-    status: 'Ngưng hoạt động'
+      "A vehicle-related service website optimized for responsive design and SEO performance.",
+    tags: ["WordPress", "Elementor", "SEO"],
+    live: "",
+    status: "Inactive"
   },
   {
-    title: 'Vật tư tiêu hao phòng sạchh Website',
-    image: ProjectImg11, // Sử dụng biến đã import
+    title: "Da Lat Marketing Website",
+    image: noImage,
     description:
-      'Phát triển website Giới thiệu công ty và marketing, tối ưu giao diện responsive và cải thiện SEO hiển thị.',
-    tags: ['WordPress', 'Flatsome', 'SEO'],
-    live: 'https://vattutieuhaophongsach.com.vn/',
-    status: 'Hoạt động'
+      "A company introduction and marketing service website built with responsive design and SEO optimization.",
+    tags: ["WordPress", "Elementor", "SEO"],
+    live: "",
+    status: "Inactive"
   },
   {
-    title: 'Nuagesauvage Website',
-    image: ProjectImg10, // Sử dụng biến đã import
+    title: "Cleanroom Consumables Website",
+    image: ProjectImg11,
     description:
-      'Xây dựng website bán sản phẩm trà tại Pháp, tối ưu hóa thiết kế di động và hiệu năng tải trang.',
-    tags: ['WordPress', 'Elementor', 'SEO'],
-    live: 'https://nuagesauvage.fr/',
-    status: 'Hoạt động'
+      "A corporate website for cleanroom consumables with responsive design and SEO optimization.",
+    tags: ["WordPress", "Flatsome", "SEO"],
+    live: "https://vattutieuhaophongsach.com.vn/",
+    status: "Active"
   },
   {
-    title: 'idojewelry Website',
-    image: ProjectImg9, // Sử dụng biến đã import
+    title: "Nuage Sauvage Website",
+    image: ProjectImg10,
     description:
-      'Phát triển website Giới thiệu công ty và marketing, tối ưu giao diện responsive và cải thiện SEO hiển thị.',
-    tags: ['WordPress', 'Flatsome', 'SEO'],
-    live: 'https://idojewelry.com/',
-    status: 'Hoạt động'
+      "An e-commerce website selling tea products in France, optimized for mobile devices and performance.",
+    tags: ["WordPress", "Elementor", "SEO"],
+    live: "https://nuagesauvage.fr/",
+    status: "Active"
   },
   {
-    title: 'Dava Innovation Website',
-    image: ProjectImg12, // Sử dụng biến đã import
+    title: "IDO Jewelry Website",
+    image: ProjectImg9,
     description:
-      'Xây dựng website bán sản phẩm trà tại Pháp, tối ưu hóa thiết kế di động và hiệu năng tải trang.',
-    tags: ['WordPress', 'Elementor', 'SEO'],
-    live: 'https://dava.com.vn/',
-    status: 'Hoạt động'
+      "A corporate jewelry website with responsive design and SEO optimization.",
+    tags: ["WordPress", "Flatsome", "SEO"],
+    live: "https://idojewelry.com/",
+    status: "Active"
   },
-]
+  {
+    title: "Dava Innovation Website",
+    image: ProjectImg12,
+    description:
+      "A corporate website built with WordPress and Elementor, optimized for responsive design and SEO performance.",
+    tags: ["WordPress", "Elementor", "SEO"],
+    live: "https://dava.com.vn/",
+    status: "Active"
+  }
+];

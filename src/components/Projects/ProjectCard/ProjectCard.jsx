@@ -3,7 +3,7 @@ import React from 'react';
 import './ProjectCard.css';
 
 const ProjectCard = ({ details }) => {
-  const isInactive = details.status !== 'Hoạt động';
+  const isInactive = details.status !== 'Active';
 
   return (
     <div className="project-card">

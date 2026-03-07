@@ -28,7 +28,7 @@ const Projects = () => {
         {/* Chỉ hiển thị nút "Xem thêm" nếu vẫn còn dự án chưa hiển thị */}
         {visibleCount < PROJECTS.length && (
           <button onClick={handleLoadMore} className="load-more-btn">
-            Xem thêm
+            see more
           </button>
         )}
       </div>
