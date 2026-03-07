@@ -41,7 +41,7 @@ that help businesses grow online.
     </div>
     <div className="education-item">
       <span className="edu-label">Duration: </span>
-      <span className="edu-value">2019 — 2022</span>
+      <span className="edu-value">2019 — 2023</span>
     </div>
   </div>
 </div>
